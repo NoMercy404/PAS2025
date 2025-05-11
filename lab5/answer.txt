@@ -1,0 +1,30 @@
+1. Dla którego z gniazd czas jest krótszy?
+Czas przesyłu pakietów będzie krótszy w przypadku UDP (User Datagram Protocol) niż w przypadku TCP (Transmission Control Protocol).
+
+2. Z czego wynika krótszy czas?
+Krótszy czas w przypadku UDP wynika z
+Brak potwierdzeń: W przypadku UDP nie ma mechanizmu potwierdzenia otrzymania pakietu.
+
+Brak retransmisji: UDP nie dba o to, czy pakiety zostały dostarczone.
+
+Brak kontroli przepływu: UDP nie zarządza przepływem danych między nadawcą a odbiorcą.
+
+3. Jakie są zalety / wady obu rozwiązań?
+UDP (User Datagram Protocol)
+Zalety:
+Szybsze przesyłanie danych,Niskie opóźnienie
+
+Wady:
+Brak niezawodności,Brak kontroli błędów
+
+TCP (Transmission Control Protocol)
+Zalety:
+Niezawodność,Kontrola błędów i przepływu,Weryfikacja poprawności połączenia
+
+Wady:
+
+Większy narzut,Większe opóźnienia
+
+UDP jest szybsze, ale mniej niezawodne, odpowiednie dla aplikacji, które tolerują utratę danych i wymagają niskiego opóźnienia (np. gry online, transmisje na żywo).
+
+TCP jest wolniejsze, ale zapewnia niezawodność i integralność danych, idealne do przesyłania ważnych danych, gdzie utrata pakietów jest nieakceptowalna (np. pobieranie plików, przesyłanie e-maili).
